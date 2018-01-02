@@ -136,12 +136,12 @@ class Otsu(object):
 
 def run_cmd(cmd):
     a = commands.getstatusoutput(cmd)
-    print('-----', cmd)
+    print('-----', cmd, '----', commands.getoutput(cmd))
     return a
 
 
 jump_times = itertools.count(0)
-adb_path = '/Users/nunchakus/tools/android/platform-tools/adb'
+adb_path = '/Users/neo/dev-tools/android/platform-tools/adb'
 while True:
     try:
         debug = False
